@@ -7,7 +7,7 @@ sprite_y: .res 1
 sleeping: .res 1
 
 .segment "RODATA"
-first_palette:
+palette_table:
 ; background
   .byte $0F,$00,$10,$30
   .byte $0F,$01,$21,$31
@@ -85,7 +85,7 @@ main:
 
   ldx #$00
 :
-  lda first_palette, x
+  lda palette_table, x
   sta PPUDATA
   inx
   cpx #$20
@@ -120,7 +120,7 @@ main_loop:
   sta $0201
   lda #$00
   sta $0202
-  lda #$10
+  lda #128
   sta $0203
 
 ; --------------------------------------------------
@@ -162,10 +162,14 @@ nmi:
   lda #%10010000
   sta PPUCTRL
 
+; --------------------------------------------------
+; Toggle sleeping flag
+; --------------------------------------------------
   lda #$00
   sta sleeping
 
   RESTORE_REGISTERS
+
   rti
 
 irq:
