@@ -52,3 +52,31 @@ echo "------- DEBUG build S-U-C-C-E-S-S.-------"
 ```
 
 # Detailed code breakdown
+
+## ld65.cfg
+
+TODO
+
+## output.nes
+
+Files with .nes extensions are ROM files for use with NES emulators.
+
+## test_gfx.chr
+
+TODO
+
+## constants.asm
+
+TODO
+
+## header.asm
+
+TODO
+
+## macros.asm
+
+TODO
+
+## main.asm
+
+TODO
