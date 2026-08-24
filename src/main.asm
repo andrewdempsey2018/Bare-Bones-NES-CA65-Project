@@ -8,11 +8,12 @@ sleeping: .res 1
 
 .segment "RODATA"
 first_palette:
+; background
   .byte $0F,$00,$10,$30
   .byte $0F,$01,$21,$31
   .byte $0F,$06,$16,$26
   .byte $0F,$09,$19,$29
-
+; sprites
   .byte $0F,$00,$10,$30
   .byte $0F,$01,$21,$31
   .byte $0F,$06,$16,$26
@@ -28,7 +29,7 @@ reset:
   cld
 
 ; --------------------------------------------------
-; disable nmi/rendering
+; Disable nmi/rendering
 ; --------------------------------------------------
   ldx #$00
   stx PPUCTRL
@@ -122,6 +123,9 @@ main_loop:
   lda #$10
   sta $0203
 
+; --------------------------------------------------
+; Wait until NMI resets 'sleeping' to 0
+; --------------------------------------------------
   lda #$01
   sta sleeping
 
