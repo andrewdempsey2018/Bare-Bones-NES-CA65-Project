@@ -8,23 +8,23 @@ This is a bare bones NES starter project intended as a jumping off point for NES
 
 # Code conventions
 
-* File names: lower case with underscores eg. my_code.asm.
-* Zero page variables: prefix and description with underscores eg. zp_player_x
-* Ram variables: Omit the prefix eg. player_lives
-* Label names: lower case with underscore (verbs for routines, nouns for data) eg. load_palette, palette_data
-* Tables: lower case with underscore, end with _table eg. sin_table
-* Constants: all caps with underscores eg. PLAYER_SPEED
-* Macros: all caps with underscores eg. LOAD_POINTER
-* Local labels: eg. @loop:
-* Hardware Registers: always name them after NES docs: rg. PPUCTRL, PPUMASK, PPUSTATUS, OAMDATA, PPUADDR, PPUDATA
-* Structured pairs: eg. zp_sprite_lo, zp_sprite_hi
-* Procedures: use verbs, lower case, underscores eg. update_player
-* Instructions: lower case eg. lda, clc
+* File names: lower case with underscores eg. my_code.asm.  
+* Zero page variables: prefix and description with underscores eg. zp_player_x  
+* Ram variables: Omit the prefix eg. player_lives  
+* Label names: lower case with underscore (verbs for routines, nouns for data) eg. load_palette, palette_data  
+* Tables: lower case with underscore, end with _table eg. sin_table  
+* Constants: all caps with underscores eg. PLAYER_SPEED  
+* Macros: all caps with underscores eg. LOAD_POINTER  
+* Local labels: eg. @loop:  
+* Hardware Registers: always name them after NES docs: rg. PPUCTRL, PPUMASK, PPUSTATUS, OAMDATA, PPUADDR, PPUDATA  
+* Structured pairs: eg. zp_sprite_lo, zp_sprite_hi  
+* Procedures: use verbs, lower case, underscores eg. update_player  
+* Instructions: lower case eg. lda, clc  
 
-* Pointers: use assembly time aliases eg.
-  -  ptr:    .res 2
-  -  ptr_lo = ptr
-  -  ptr_hi = ptr+1
+* Pointers: use assembly time aliases eg.  
+  -  ptr:    .res 2  
+  -  ptr_lo = ptr  
+  -  ptr_hi = ptr+1  
 
 # Order of segments
 
