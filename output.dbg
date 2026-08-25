@@ -1,7 +1,7 @@
 version	major=2,minor=0
 info	csym=0,file=5,lib=0,line=146,mod=1,scope=1,seg=9,span=131,sym=22,type=4
 file	id=0,name="src/main.asm",size=5534,mtime=0x6A8CA2B8,mod=0
-file	id=1,name="src/header.asm",size=536,mtime=0x6A8AAF78,mod=0
+file	id=1,name="src/header.asm",size=548,mtime=0x6A8DF66C,mod=0
 file	id=2,name="src/macros.asm",size=218,mtime=0x6A89EA96,mod=0
 file	id=3,name="src/constants.asm",size=450,mtime=0x6A8CA181,mod=0
 file	id=4,name="test_gfx.chr",size=8192,mtime=0x6A8AE499,mod=0
