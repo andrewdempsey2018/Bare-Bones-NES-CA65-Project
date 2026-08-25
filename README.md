@@ -4,7 +4,7 @@ This project is intentionally written and maintained by humans. Please don't use
 
 # Bare Bones NES CA65 Project
 
-This is a bare bones NES starter project intended as a jumping off point for NES 6502 assembly development using the CA65 assembler. See below for detailed code breakdown. This starter project does not include a mapper, see my other repository 'name here' for an MMC3 example.
+This is a bare bones NES starter project intended as a jumping off point for NES 6502 assembly development using the CA65 assembler. See below for detailed code breakdown. This starter project does not include a mapper, see my other repository 'MMC3 starter' for an MMC3 example.
 
 # Code conventions
 
