@@ -1,6 +1,7 @@
+; --------------------------------------------------
+; Include header here
+; --------------------------------------------------
 .include "header.asm"
-.include "macros.asm"
-.include "constants.asm"
 
 .segment "ZEROPAGE"
 sprite_y: .res 1
@@ -20,6 +21,12 @@ palette_table:
   .byte $0F,$09,$19,$29
   
 .segment "CODE"
+; --------------------------------------------------
+; Fixed bank includes
+; --------------------------------------------------
+.include "macros.asm"
+.include "constants.asm"
+
 reset:
 ; --------------------------------------------------
 ; Disable maskable interrupts
